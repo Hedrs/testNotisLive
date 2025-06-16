@@ -1,0 +1,36 @@
+{
+  "name": "@new-2-my-obsidian-web/client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node .",
+    "build": "vite build && vike prerender",
+    "types": "tsc --noEmit --project ./tsconfig.json",
+    "lint": "eslint . --report-unused-disable-directives",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.5",
+    "classnames": "^2.5.1",
+    "include-media": "^2.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^7.6.0",
+    "sass": "^1.87.0",
+    "tailwindcss": "^4.1.5",
+    "vike": "^0.4.229"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "stylelint": "^16.19.1",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-scss": "^6.11.1",
+    "vite": "^6.3.1"
+  }
+}

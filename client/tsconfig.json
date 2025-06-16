@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "System",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": false,
+    "forceConsistentCasingInFileNames": true,
+    "moduleDetection": "force",
+    "preserveSymlinks": false,
+    "esModuleInterop": true,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "allowJs": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    "outFile": "./dist/lastUpdate.js",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@generated/*": ["generated/*"]
+    }
+  },
+  "include": ["src/**/*", "generated/**/*", "src/svgComponents/DonationFolder/.tsx"],
+  "exclude": ["node_modules", "dist"]
+}

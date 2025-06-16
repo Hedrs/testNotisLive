@@ -1,0 +1,31 @@
+{
+  "name": "my-2-obsidian-web",
+  "version": "0.0.0",
+  "description": "My first project, which I will complete",
+  "main": "index.js",
+  "author": "Tamer",
+  "license": "MIT",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "fd": "pnpm --filter @new-2-my-obsidian-web/client",
+    "dev": "pnpm -r --parallel dev",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.26.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1"
+  }
+}
