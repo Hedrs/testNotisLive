@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "node .",
     "build": "vite build && vike prerender",
     "types": "tsc --noEmit --project ./tsconfig.json",
     "lint": "eslint . --report-unused-disable-directives",

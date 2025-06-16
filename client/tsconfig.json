@@ -24,13 +24,11 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-    "outFile": "./dist/lastUpdate.js",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@generated/*": ["generated/*"]
+      "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*", "generated/**/*", "src/svgComponents/DonationFolder/.tsx"],
+  "include": ["src/**/*", "src/svgComponents/DonationFolder/.tsx"],
   "exclude": ["node_modules", "dist"]
 }
