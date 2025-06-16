@@ -1,9 +1,5 @@
-import React from 'react'
-
 function Page() {
-  return (
-    <>[a[a[a[a[a[a[</>
-  );
+  return <>[a[a[a[a[a[a[</>;
 }
 
 export const documentProps = {
