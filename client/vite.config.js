@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import vike from 'vike/plugin';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 // https://vite.dev/config
 export default defineConfig({
@@ -8,19 +9,21 @@ export default defineConfig({
     include: ['react', 'react-dom'], // Предварительная оптимизация зависимостей
   },
   build: {
-    minify: 'esbuild', // Используем esbuild для минимизации
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
+            if (id.includes('react')) {
+              return 'react';
+            }
             return 'vendor';
           }
-          if (id.includes('/pages/')) {
-            return 'pages';
+          if (id.includes('vike') || id.includes('vite-plugin')) {
+            return 'framework';
           }
         },
       },
     },
   },
-  plugins: [react(), vike({ prerender: true })],
+  plugins: [react(), vike({ prerender: true }), visualizer({ open: true, gzipSize: true, brotliSize: true })],
 });

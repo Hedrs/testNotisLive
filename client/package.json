@@ -11,20 +11,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.5",
-    "classnames": "^2.5.1",
-    "include-media": "^2.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.6.0",
-    "sass": "^1.87.0",
-    "tailwindcss": "^4.1.5",
     "vike": "^0.4.229"
   },
   "devDependencies": {
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
+    "rollup-plugin-visualizer": "^6.0.3",
     "stylelint": "^16.19.1",
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-standard-scss": "^14.0.0",
