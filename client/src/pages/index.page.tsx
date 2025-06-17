@@ -1,5 +1,11 @@
 function Page() {
-  return <>[a[a[a[a[a[a[</>;
+  return (
+    <div className="">
+      <h1>Notis call</h1>
+      <div>AHAHHAHAHAHHAHAAHAHAHHAHAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+      <input type="text" name="puk" id="puk" placeholder="puk" />
+    </div>
+  );
 }
 
 export const documentProps = {
