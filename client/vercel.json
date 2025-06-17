@@ -1,36 +1,16 @@
 {
   "version": 2,
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "name": "react-vite-vike-spa-optimized",
-  "buildCommand": "pnpm install && pnpm run build",
-  "outputDirectory": "dist",
-  "installCommand": "pnpm install",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
-      "source": "/((?!/).*)",
+      "source": "/",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, s-maxage=86400, stale-while-revalidate=604800"
+          "value": "public, max-age=31536000, immutable"
         }
       ]
     }
-  ],
-  "routes": [
-    {
-      "src": "/(favicon\\.ico|robots\\.txt|manifest\\.webmanifest|apple-touch-icon\\..*|msapplication-TileImage\\..*)$",
-      "dest": "$1",
-      "continue": false
-    },
-    {
-      "src": "/static/(.*)",
-      "dest": "/static/$1",
-      "continue": false
-    },
-    {
-      "src": "/.*",
-      "dest": "index.html"
-    }
-  ],
-  "runtime": "nodejs20.x"
+  ]
 }
