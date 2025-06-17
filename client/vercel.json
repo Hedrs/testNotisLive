@@ -31,5 +31,5 @@
       "dest": "index.html"
     }
   ],
-  "runtime": "nodejs18.x"
+  "runtime": "nodejs20.x"
 }
