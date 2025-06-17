@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "name": "react-vite-vike-spa-optimized",
   "buildCommand": "pnpm install && pnpm run build",
   "outputDirectory": "dist",
