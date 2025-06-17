@@ -1,35 +1,4 @@
 {
-  "version": 2,
-  "name": "react-vite-vike-spa-optimized",
-  "buildCommand": "pnpm install && pnpm run build",
-  "outputDirectory": "dist",
-  "installCommand": "pnpm install",
-  "headers": [
-    {
-      "source": "/((?!/).*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, s-maxage=86400, stale-while-revalidate=604800"
-        }
-      ]
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(favicon\\.ico|robots\\.txt|manifest\\.webmanifest|apple-touch-icon\\..*|msapplication-TileImage\\..*)$",
-      "dest": "$1",
-      "continue": false
-    },
-    {
-      "src": "/static/(.*)",
-      "dest": "/static/$1",
-      "continue": false
-    },
-    {
-      "src": "/.*",
-      "dest": "index.html"
-    }
-  ],
-  "runtime": "nodejs20.x"
+  "buildCommand": "pnpm install && pnpm build",
+  "outputDirectory": "dist/client/"
 }
