@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vike prerender",
+    "predeploy": "vite build && vike prerender",
+    "deploy": "gh-pages -d dist/client",
     "types": "tsc --noEmit --project ./tsconfig.json",
     "lint": "eslint . --report-unused-disable-directives",
     "preview": "vite preview"
@@ -14,12 +15,13 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.6.0",
-    "vike": "^0.4.229"
+    "vike": "^0.4.232"
   },
   "devDependencies": {
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
+    "gh-pages": "^6.3.0",
     "rollup-plugin-visualizer": "^6.0.3",
     "stylelint": "^16.19.1",
     "stylelint-config-prettier-scss": "^1.0.0",

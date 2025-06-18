@@ -5,25 +5,12 @@ import { visualizer } from 'rollup-plugin-visualizer';
 
 // https://vite.dev/config
 export default defineConfig({
+  base: '/testNotisLive/',
   optimizeDeps: {
     include: ['react', 'react-dom'], // Предварительная оптимизация зависимостей
   },
   build: {
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            if (id.includes('react')) {
-              return 'react';
-            }
-            return 'vendor';
-          }
-          if (id.includes('vike') || id.includes('vite-plugin')) {
-            return 'framework';
-          }
-        },
-      },
-    },
+    chunkSizeWarningLimit: 2000,
   },
-  plugins: [react(), vike({ prerender: true }), visualizer({ open: true, gzipSize: true, brotliSize: true })],
+  plugins: [react(), vike(), visualizer({ open: true, gzipSize: true, brotliSize: true })],
 });
