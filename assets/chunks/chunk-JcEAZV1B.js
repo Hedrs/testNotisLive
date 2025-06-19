@@ -1,1 +1,0 @@
-import{j as t}from"./chunk-CA54gjbx.js";import"../entries/entry-client-routing.CebfYJV1.js";import"./chunk-CmjF5wx_.js";function e({children:r}){return t.jsx(t.Fragment,{children:r})}export{e as default};

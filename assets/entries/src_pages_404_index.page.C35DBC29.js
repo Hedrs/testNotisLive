@@ -1,0 +1,1 @@
+import{j as e}from"../chunks/chunk-D_zvdyIk.js";function n(){return e.jsxs("div",{className:"p-8 text-center",children:[e.jsx("h1",{children:"404 - Page not found"}),e.jsx("p",{children:"Sorry =("})]})}export{n as Page};

@@ -1,0 +1,1 @@
+import{j as e}from"../chunks/chunk-D_zvdyIk.js";import{Page as s}from"./src_pages_404_index.page.C35DBC29.js";function i({is404:r}){return e.jsxs("div",{className:"p-8 text-center",children:[e.jsx("h1",{children:r?e.jsx(s,{}):"Error"}),e.jsx("p",{children:"Please, checked URL or try again later"})]})}export{i as Page};

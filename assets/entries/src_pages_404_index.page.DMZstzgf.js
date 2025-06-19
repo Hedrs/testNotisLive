@@ -1,1 +1,0 @@
-import{j as r}from"../chunks/chunk-CA54gjbx.js";import"./entry-client-routing.CebfYJV1.js";import"../chunks/chunk-CmjF5wx_.js";function o(){return r.jsxs("div",{className:"p-8 text-center",children:[r.jsx("h1",{children:"404 - Page not found"}),r.jsx("p",{children:"Sorry =("})]})}export{o as Page};
