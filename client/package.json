@@ -6,7 +6,8 @@
   "homepage": "https://hedrs.github.io/testNotisLive/",
   "scripts": {
     "dev": "vite",
-    "predeploy": "vite build && vike prerender",
+    "build": "vite build",
+    "predeploy": "vike prerender",
     "deploy": "gh-pages -d dist/client",
     "types": "tsc --noEmit --project ./tsconfig.json",
     "lint": "eslint . --report-unused-disable-directives",

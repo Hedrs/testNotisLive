@@ -11,7 +11,10 @@ type MyPageContext = PageContextServer & {
 export function prerender() {
   return [
     {
-      url: ['/', '/404'],
+      url: '/',
+    },
+    {
+      url: '/404',
     },
   ];
 }
