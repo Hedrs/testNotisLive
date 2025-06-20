@@ -7,13 +7,8 @@ const AppLazy = React.lazy(() => import('../App'));
 
 export function render(pageContext: any) {
   console.log('RENDER HOOK WORKING');
-  const { pageProps, exports } = pageContext;
-  const LazyPage = React.lazy(() => {
-    if (!exports.pageFilePath) {
-      throw new Error('pageFilePath is undefined in pageContext.exports');
-    }
-    return import(exports.pageFilePath);
-  });
+  const { pageProps } = pageContext;
+  const LazyPage = React.lazy(() => Promise.resolve({ default: pageContext.Page }));
   const container = document.getElementById('react-root')!;
   ReactDOM.createRoot(container).render(
     <React.StrictMode>
